@@ -11,6 +11,16 @@
         "source": "**",
         "destination": "/index.html"
       }
+    ],
+    "rewrites": [
+      {
+        "source": "/LV0duWO2ms",
+        "destination": "/instructor.html"
+      },
+        {
+        "source": "/JiuooL0NzE",
+        "destination": "/student.html"
+      }
     ]
   }
 }

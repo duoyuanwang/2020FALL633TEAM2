@@ -1,0 +1,32 @@
+{
+  "email" : "alex@bu.edu",
+  "owner" : "Alex",
+  "surveys" : {
+    "-ML07_Z3lGQmYE-Abgw3" : {
+      "addDate" : 1603585529963,
+      "answers" : {
+        "-ML0HPC-J3xH7L6HBE6m" : [ "Mahira Dillon", "15486236", "US Eastern", "Yes" ],
+        "-ML0HXGtmQHhnPdHthEV" : [ "Raphael Hook", "67848973", "EST", "Yes" ],
+        "-ML0HZym6of0lpMuBRv5" : [ "Katlyn Travis", "98536717", "PST", "" ]
+      },
+      "description" : "survey for CS633 class 2017 fall",
+      "name" : "2017FALLCS555",
+      "publishDate" : 1603585530963,
+      "questions" : [ "What is your full name?", "What is your BU ID?", "Which time zone are you in?", "Are you attending this class on campus?" ]
+    },
+    "-ML07cRwi3JdTwmRk7Jg" : {
+      "addDate" : 1603585521963,
+      "description" : "",
+      "name" : "2018SPRCS633",
+      "publishDate" : 1603585527963,
+      "questions" : [ "What is your full name?", "What is your BU ID?", "What is your favorate color?", "Who do you want to be grouped with?" ]
+    },
+    "-ML07eePjLD3zj7bCnPA" : {
+      "addDate" : 1603585531963,
+      "description" : "",
+      "name" : "2020FALLCS633",
+      "publishDate" : 0,
+      "questions" : [ "What is your full name?", "What is your BU ID?" ]
+    }
+  }
+}

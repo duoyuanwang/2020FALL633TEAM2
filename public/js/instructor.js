@@ -1,12 +1,4 @@
-
-window.addEventListener("DOMContentLoaded", event => {
-    document.getElementById("addlist").addEventListener("click", event => {
-        addnewlist();
-   });
-   
+$(document).ready(function() {
+    console.log("ready");
+    $("#survey-detail").attr("src", "instructor_detail.html")
 });
-
-function addnewlist() {
-    text = '<div class="onlist" style="width:100%; height:50px;"><input type="text" class="newlist"></div><br>';
-    document.getElementById("list").innerHTML = text;
-}

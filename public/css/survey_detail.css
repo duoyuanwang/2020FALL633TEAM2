@@ -1,0 +1,43 @@
+.row {
+    display:block;
+    margin: 20px 20px;
+}
+
+.wide {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+label {
+    font-size: larger;
+}
+
+#survey-name {
+    width: 200dp;
+}
+
+button {
+    padding: 5px 15px;
+    margin: auto 5px;
+}
+
+.boxed {
+    border-color: #000;
+    border-width: 2dp;
+    border-style: solid;
+}
+
+input, textarea{
+    font-size: x-large;
+}
+
+.remove-question {
+    margin: auto;
+    margin-left: 20dp;
+    display: inline;
+    float: right;
+}
+
+.question {
+    margin: 5px;
+}

@@ -19,3 +19,15 @@
     margin: 2px;
     float: right;
 }
+
+#result-detail-container{
+    border: #333;
+    height: 100%;
+    width: 100%;
+    min-width: 600px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 2px;
+    float: right;
+    overflow-y: scroll;
+}

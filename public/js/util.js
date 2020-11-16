@@ -11,10 +11,12 @@ var firebaseConfig = {
 var database;
 var surveys;
 var fetching = 0;
+var ready = 0;
 $(document).ready(function() {
     console.log( "ready!" );
     firebase.initializeApp(firebaseConfig);
     database = firebase.database();
+    ready = 1;
     //read sample
     /*
     database.ref("/owner/").once("value").then(function(snapshot) {
@@ -54,7 +56,10 @@ $(document).ready(function() {
     */
 });
 
-function getAllSurveys(){
+function getAllSurveys(callback){
+    while(ready != 1){
+        console.log("not ready");
+    }
     if(fetching == 1){
         return;
     }
@@ -63,30 +68,43 @@ function getAllSurveys(){
         console.log(snapshot.val());
         surveys = snapshot.val();
         fetching = 0;
+        callback();
     });
     
 }
 
-function addSurvey(survey){
+function getSurvey(id, callback){
+    while(ready != 1){
+        console.log("not ready");
+    }
+    database.ref("/surveys/" + id).once("value").then(function(snapshot) {
+        callback(snapshot.val());
+    });
+}
+
+function addSurvey(survey, callback){
+    while(ready != 1){
+        console.log("not ready");
+    }
     let newSurvey = database.ref("surveys").push(survey, function(error){
         if(error == null){
-            getAllSurveys();
+            callback();
         }else{
             console.log(error);
         }
     });
 }
 
-function updateSurvey(id, survey){
+function updateSurvey(id, survey, callback){
     database.ref("/surveys/" + id).set(survey, function(){
-        getAllSurveys();
+        callback();
     });
 }
 
-function deleteSurvey(id){
+function deleteSurvey(id, callback){
     database.ref("/surveys/" + id).remove().then(function(){
         console.log("Remove succeeded.")
-        getAllSurveys();
+        callback();
     });
 }
 

@@ -5,7 +5,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="./js/instructor.js"></script>
         <link rel="stylesheet" type="text/css" href="./css/base.css">
         <link rel="stylesheet" type="text/css" href="./css/survey_list.css">
         <title>LfA-Instructor</title>
@@ -19,7 +18,7 @@
             <div id = "base-container">
                 <div id = "survey-list-container">
                     <ul id="survey-list-body">
-                        <li class="survey-list-item">2017FALLCS633</li>
+                        <li class="survey-list-item">2017FALLCS633<span style="display: none;">-ML07_Z3lGQmYE-Abgw3</span></li>
                         <li class="survey-list-item selected">2017FALLCS633</li>
                         <li class="survey-list-item">2017FALLCS633</li>
                         <li class="survey-list-item">2017FALLCS633</li>
@@ -49,5 +48,10 @@
                 </div>
             </div>
         </div>
+        
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+        <script src="./js/util.js"></script>
+        <script src="./js/instructor.js"></script>
     </body>
 </html>

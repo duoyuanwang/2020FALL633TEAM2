@@ -87,12 +87,14 @@ function addSurvey(survey, callback){
         console.log("not ready");
     }
     let newSurvey = database.ref("surveys").push(survey, function(error){
-        if(error == null){
-            callback();
-        }else{
+        if(error != null){
             console.log(error);
+            return;
         }
     });
+    
+    callback(newSurvey.key);
+    
 }
 
 function updateSurvey(id, survey, callback){

@@ -21,8 +21,8 @@ $(document).ready(function() {
     saveBtn = $("button#save");
     
     parent.getSurvey(parent.clickedSurvey, function(data){
-        survey = data;
-        surveyChanged = data;
+        survey = jQuery.extend({}, data);
+        surveyChanged = jQuery.extend({}, data);
         initSurvey();
     });
     

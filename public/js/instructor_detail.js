@@ -21,8 +21,8 @@ $(document).ready(function() {
     saveBtn = $("button#save");
     
     parent.getSurvey(parent.clickedSurvey, function(data){
-        survey = jQuery.extend({}, data);
-        surveyChanged = jQuery.extend({}, data);
+        survey = jQuery.extend(true, {}, data);
+        surveyChanged = jQuery.extend(true, {}, data);
         initSurvey();
     });
     
@@ -78,7 +78,6 @@ function onClickRemoveQuestion(){
     let index = $(".question").index(question);
     question.remove();
     surveyChanged["questions"].splice(index,1);
-    console.log(survey["questions"]);
 }
 
 function restoreChanges(){
@@ -111,5 +110,8 @@ function saveSurvey(){
     });
 }
 
-
+//todo: publish survey
+function publishSurvey(){
+    
+}
 

@@ -31,7 +31,7 @@ $(document).ready(function() {
             publishDate: 1603585530963,
             addDate: 1603585529963,
             description: "survey for CS633 class 2017 fall",
-            questions: ["What is your full name?", "What is your BU ID?", "Which time zone are you in?", "Are you attending this class on campus?"],
+            questions: ["What is your BU ID?", "Which time zone are you in?", "Are you attending this class on campus?"],
             answers: [["Mahira Dillon", "15486236", "US Eastern", "Yes"],
                       ["Raphael Hook", "67848973", "EST", "Yes"],
                       ["Katlyn Travis", "98536717", "PST", ""]]

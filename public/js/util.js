@@ -99,6 +99,7 @@ function addSurvey(survey, callback){
 
 function updateSurvey(id, survey, callback){
     database.ref("/surveys/" + id).set(survey, function(){
+        surveys[id] = survey;
         callback();
     });
 }
@@ -110,10 +111,10 @@ function deleteSurvey(id, callback){
     });
 }
 
-function addAnswer(surveyId, answer){
+function addAnswer(surveyId, answer, callback){
     database.ref("/surveys/" + surveyId + "/answers").push(answer, function(error){
         if(error == null){
-            getAllSurveys();
+            callback();
         }else{
             console.log(error);
         }

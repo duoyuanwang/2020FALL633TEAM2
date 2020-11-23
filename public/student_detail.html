@@ -9,57 +9,36 @@
     </head>
     <body>
         <div id = "limiter">
-            <form id = "survey-frm" action="#">
-                <div id = "survey-header">
-                    <div class = "row">
-                        <label for="survey-name">Survey Name:</label>
-                    </div>
-                    <div class = "row">
-                        <input type="text" id = "survey-name" readonly value="Sed volutpat diam eget">
-                    </div>
-                    <div class = "row">
-                        <label class = 'the-label' for="description">Description:</label>
-                    </div>
-                    <div class = "row">
-                        <textarea id = "description" style="width: 40em; height: 10em;" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, congue sed leo et, pretium finibus urna. Curabitur quis varius nisl. Sed quis sapien tempus, egestas magna eu, aliquet elit. Fusce lorem mi, luctus non sollicitudin eu, maximus ac tortor. Duis vehicula gravida sapien nec euismod. Morbi pellentesque, risus vitae malesuada hendrerit, ligula tortor tempor nisl, eget tempor lectus nisl non lorem. Nullam lobortis elit sed ipsum ullamcorper placerat. Nunc sem massa, luctus in urna vel, condimentum tempus velit.</textarea>
-                    </div>
+            <div id = "survey-header">
+                <div class = "row">
+                    <label for="survey-name">Survey Name:</label>
                 </div>
-                
-                <div id = "questions">
-                    <div class="row">
-                       <label>Questions:</label>
-                    </div>
-                    <div class="row">
-                        <p class="question">Proin pretium nunc a magna sollicitudin consectetur eu nec neque.</p>
-                        <textarea cols="60" rows="5"></textarea>
-                    </div>
-                    
-                    <div class="row">
-                        <p class="question">Proin pretium nunc a magna sollicitudin consectetur eu nec neque.</p>
-                        <textarea cols="60" rows="5"></textarea>
-                    </div>
-                    
-                    <div class="row">
-                        <p class="question">Proin pretium nunc a magna sollicitudin consectetur eu nec neque.</p>
-                        <textarea cols="60" rows="5"></textarea>
-                    </div>
-                    
-                    <div class="row">
-                        <p class="question">Proin pretium nunc a magna sollicitudin consectetur eu nec neque.</p>
-                        <textarea cols="60" rows="5"></textarea>
-                    </div>
-                    
-                    <div class="row">
-                        <p class="question">Proin pretium nunc a magna sollicitudin consectetur eu nec neque.</p>
-                        <textarea cols="60" rows="5"></textarea>
-                    </div>
-
-                    <div class = "row wide">
-                        <button id = "submit">submit</button>
-                        <button id = "clear">clear</button>
-                    </div>
+                <div class = "row">
+                    <input type="text" id = "survey-name" readonly>
                 </div>
-            </form>
+                <div class = "row">
+                    <label class = 'the-label' for="description">Description:</label>
+                </div>
+                <div class = "row">
+                    <textarea id = "description" style="width: 40em; height: 10em;" readonly></textarea>
+                </div>
+            </div>
+            <div class="row">
+               <label>Questions:</label>
+            </div>
+            <div id = "questions">
+<!--
+                <div class="row">
+                    <p class="question">Proin pretium nunc a magna sollicitudin consectetur eu nec neque.</p>
+                    <textarea cols="60" rows="5"></textarea>
+                </div>
+-->
+            </div>
+            <div class = "row wide">
+                    <button id = "submit">submit</button>
+                    <button id = "clear">clear</button>
+                </div>
         </div>
+        <script src="./js/student_detail.js"></script>
     </body>
 </html>

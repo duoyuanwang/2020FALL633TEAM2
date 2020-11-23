@@ -67,3 +67,13 @@ function removeSurvey(){
         
     });
 }
+
+function publishSurvey(){
+    getSurvey(clickedSurvey, function(survey){
+        survey["publishDate"] = new Date().getTime();
+        updateSurvey(clickedSurvey, survey, function(){
+            $("#" + clickedSurvey).click();
+            alert("Survey has been published!!");
+        });
+    });
+}

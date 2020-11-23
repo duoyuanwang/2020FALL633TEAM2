@@ -9,6 +9,7 @@ var cancelBtn;
 var deleteBtn;
 var saveBtn;
 var addQuestionBtn;
+var publishBtn;
 
 
 $(document).ready(function() {
@@ -19,6 +20,7 @@ $(document).ready(function() {
     deleteBtn = $("button#delete");
     addQuestionBtn = $("#add-question");
     saveBtn = $("button#save");
+    publishBtn = $("button#publish");
     
     parent.getSurvey(parent.clickedSurvey, function(data){
         survey = jQuery.extend(true, {}, data);
@@ -30,6 +32,7 @@ $(document).ready(function() {
     addQuestionBtn.on("click", addQuestion);
     deleteBtn.on("click", parent.removeSurvey);
     saveBtn.on("click", saveSurvey);
+    publishBtn.on("click", publishSurvey);
 });
 
 function initSurvey(){
@@ -112,6 +115,7 @@ function saveSurvey(){
 
 //todo: publish survey
 function publishSurvey(){
-    
+    saveSurvey();
+    parent.publishSurvey();
 }
 

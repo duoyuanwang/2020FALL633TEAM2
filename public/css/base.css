@@ -1,0 +1,33 @@
+.header {
+    background-color: rgb(179, 233, 255);
+    padding: 10px 30px;
+}
+
+#base-container{
+    display: flex;
+    height: 85vh;
+    width: 100%;
+}
+
+#survey-detail-container{
+    border: #333;
+    height: 100%;
+    width: 100%;
+    min-width: 600px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 2px;
+    float: right;
+}
+
+#result-detail-container{
+    border: #333;
+    height: 100%;
+    width: 100%;
+    min-width: 600px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 2px;
+    float: right;
+    overflow-y: scroll;
+}

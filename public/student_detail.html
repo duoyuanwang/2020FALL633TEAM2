@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="./css/survey_detail.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id = "limiter">
+            <div id = "survey-header">
+                <div class = "row">
+                    <label for="survey-name">Survey Name:</label>
+                </div>
+                <div class = "row">
+                    <input type="text" id = "survey-name" readonly>
+                </div>
+                <div class = "row">
+                    <label class = 'the-label' for="description">Description:</label>
+                </div>
+                <div class = "row">
+                    <textarea id = "description" style="width: 40em; height: 10em;" readonly></textarea>
+                </div>
+            </div>
+            <div class="row">
+               <label>Questions:</label>
+            </div>
+            <div id = "questions">
+<!--
+                <div class="row">
+                    <p class="question">Proin pretium nunc a magna sollicitudin consectetur eu nec neque.</p>
+                    <textarea cols="60" rows="5"></textarea>
+                </div>
+-->
+            </div>
+            <div class = "row wide">
+                    <button id = "submit">submit</button>
+                    <button id = "clear">clear</button>
+                </div>
+        </div>
+        <script src="./js/student_detail.js"></script>
+    </body>
+</html>

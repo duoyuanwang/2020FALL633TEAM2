@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="./css/survey_detail.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id = "limiter">
+            <div id = "survey-header">
+                <div class = "row">
+                    <label for="survey-name">Survey Name:</label>
+                </div>
+                <div class = "row">
+                    <input type="text" id = "survey-name">
+                </div>
+                <div class = "row">
+                    <label class = 'the-label' for="description">Description:</label>
+                </div>
+                <div class = "row">
+                    <textarea id = "description" style="width: 40em; height: 10em;"></textarea>
+                </div>
+            </div>
+
+            <div id = "questions">
+                <div class="row">
+                    <label>Questions:</label>
+                </div>
+                <div id = "question-list">
+<!--
+                    <div class="question boxed">
+                        <div class="row">
+                            <input class="question-text" type="text" size="100">
+                            <img class="remove-question" src="./resource/close.png" alt="remove question"  width="30" height="30">
+                        </div>
+                    </div>
+-->
+                </div>
+
+
+                <div class = "row wide">
+                    <button id = "add-question">add a new question</button>
+                </div>
+            </div>
+
+            <div class = "row wide">
+                <button id = "save">save</button>
+                <button id = "cancel">cancel</button>
+                <button id = "publish">publish</button>
+                <button id = "delete">delete</button>
+            </div>
+
+        </div>
+        <script src="./js/instructor_detail.js"></script>
+    </body>
+</html>
